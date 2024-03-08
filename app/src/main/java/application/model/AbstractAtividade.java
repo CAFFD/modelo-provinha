@@ -1,6 +1,6 @@
 package application.model;
 
-public class AbstractAtividade {
+public class AbstractAtividade implements Atividade {
     private String descricao;
     
     public void setDescricao(String descricao) {
