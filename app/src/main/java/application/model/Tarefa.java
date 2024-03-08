@@ -19,4 +19,9 @@ public class Tarefa extends AbstractAtividade {
         this.setDescricao(descricao);
         this.setConcluido(false);
     }
+
+    @Override
+    public String getDetalhes() {
+        return "[T] " + this.getDescricao();
+    }
 }

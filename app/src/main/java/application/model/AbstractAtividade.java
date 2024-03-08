@@ -9,4 +9,7 @@ public class AbstractAtividade implements Atividade {
     public String getDescricao() {
         return this.descricao;
     }
+    public String getDescricao() {
+        return this.descricao;
+    }
 }
