@@ -6,10 +6,13 @@ public class Tarefa extends AbstractAtividade {
     public void setConcluido(boolean concluido) {
         this.concluido = concluido;
     }
-
     public boolean getConcluido() {
         return this.concluido;
     }
+
+    public void setConcluido() {
+        this.concluido = !this.concluido;
+}   
     public Tarefa(String descricao, boolean concluido) {
         this.setDescricao(descricao);
         this.setConcluido(concluido);

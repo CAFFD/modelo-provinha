@@ -8,9 +8,9 @@ public class App {
         t.setDescricao("Teste de Tarefa");
         t.setConcluido(false);
 
-        System.out.println(t.getDescricao());  
+        System.out.println(t.getDetalhes());  
 
         Tarefa t2 = new Tarefa("Segunda Tarefa");
-        System.out.println(t2.getDescricao());
+        System.out.println(t2.getDetalhes());
     }
 }
