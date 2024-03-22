@@ -3,6 +3,7 @@ package application;
 import java.util.Calendar;
 import java.util.ArrayList;
 
+import application.model.AbstractAtividade;
 import application.model.Compromisso;
 import application.model.Tarefa;
 
@@ -43,12 +44,12 @@ public class App {
 
         System.out.println(c2.getDetalhes());
 
-        ArrayList<Atividade> lista = new ArrayList<Atividade>();
+        ArrayList<AbstractAtividade> lista = new ArrayList<AbstractAtividade>();
         lista.add(t);
-        lista.add(2);
+        lista.add(c2);
 
         System.out.println("----------[Lista]----------");
-        for(Atividade a : lista) {
+        for(AbstractAtividade a : lista) {
             System.out.println(a.getDetalhes());
         }
     }
