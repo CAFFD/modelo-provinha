@@ -29,13 +29,6 @@ public class App {
         c.setDataFinal(dtFim);
 
         System.out.println(c.getDetalhes());
-//    }
-//}
-//
-//public class App {
-//    public static void main(String[] args) {
-        
-        System.out.println(c.getDetalhes());
 
         Compromisso c2 = new Compromisso();
         c2.setDescricao("Férias");
@@ -51,6 +44,10 @@ public class App {
         System.out.println("----------[Lista]----------");
         for(AbstractAtividade a : lista) {
             System.out.println(a.getDetalhes());
+        }
+
+        for(int v : Compromisso.strDateToArrayIntDate("28/03/2024")) {
+            System.out.println(v);
         }
     }
 }
